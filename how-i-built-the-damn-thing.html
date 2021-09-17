@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
+            <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>A Ridgway Musings - Authors</title>
+        <title>A Ridgway Musings</title>
 
             <link href="http://blog.aridgwayweb.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Ridgway Musings Full Atom Feed" />
+            <link href="http://blog.aridgwayweb.com/feeds/how-to.atom.xml" type="application/atom+xml" rel="alternate" title="A Ridgway Musings Categories Atom Feed" />
 
         <!-- Bootstrap Core CSS -->
         <link href="http://blog.aridgwayweb.com/theme/css/bootstrap.min.css" rel="stylesheet">
@@ -33,8 +34,24 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-		<meta property="og:locale" content="en">
+
+
+
+        <meta name="tags" contents="pelican" />
+        <meta name="tags" contents="publishing" />
+        <meta name="tags" contents="github pages" />
+
+
+			<meta property="og:locale" content="en">
 		<meta property="og:site_name" content="A Ridgway Musings">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="http://blog.aridgwayweb.com/how-i-built-the-damn-thing.html">
+	<meta property="og:title" content="A New Way To Build A Free Blog">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="http://blog.aridgwayweb.com/images/How_I_Built_Cover.png">
+	<meta property="article:published_time" content="2021-09-18 10:00:00+10:00">
 </head>
 
 <body>
@@ -65,12 +82,17 @@
     </nav>
 
     <!-- Page Header -->
-        <header class="intro-header" style="background-image: url('https://wallpaperaccess.com/full/3239444.jpg')">
+        <header class="intro-header" style="background-image: url('images/How_I_Built_Cover.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Articles by </h1>
+                        <h1>A New Way To Build A Free Blog</h1>
+                        <span class="meta">Posted by
+                                <a href="http://blog.aridgwayweb.com/author/andrew-ridgway.html">Andrew Ridgway</a>
+                             on Sat 18 September 2021
+                        </span>
+                        
                     </div>
                 </div>
             </div>
@@ -81,14 +103,24 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-preview">
-            <a href="http://blog.aridgwayweb.com/author/andrew-ridgway.html" rel="bookmark">
-                <h2 class="post-title">
-                    Andrew Ridgway (1)
-                </h2>
-            </a>
-        </div>
-        <hr>
+    <!-- Post Content -->
+    <article>
+        <p>Recently in conversation someone mentioned that github pages was a way to fire up a blog, set up a repo of a certain name under your user with the usual format (i.e an index.html) and <em>poof</em> you now have a website capable of doing anything you need a website to do... free! </p>
+<p>Of course this is only to a point. A blog for example is simple a bunch of static pages with some JS, CSS and HTML easy peasy you're good to go. You want a full LAMP stack and complete server side control.. well... this solution is probably not for you. </p>
+<p>What I wanted to write in as my first post though was how I set this little corner of the web up. It was fun, quick, and REALLY easy to do and I thought I'd share how I did it.</p>
+<h2>What You'll Need</h2>
+<p>For this particular set up I am standing on the back of several technologies. 
+1. <a href="https://git-scm.com/">Git</a>
+2. <a href="https://github.com/">Github</a> (no way out of this unfortunately)
+3. <a href="https://www.python.org/">Python</a> (I'm using 3.8 but I'm sure most 3+ version will work)
+4. <a href="https://www.gnu.org/software/bash/">Bash</a> (I build this on my linux laptop but WSL or MacOS should work more or less the same)
+5. <a href="https://github.com/getpelican/pelican">Pelican</a></p>
+<p>I won't go through how to install these as those links have much more thorough documentation I could ever provide. So from here on out I will assume you have configured and installed all the prereqs!</p>
+<p>...To Be Continued</p>
+    </article>
+
+    <hr>
+
             </div>
         </div>
     </div>
